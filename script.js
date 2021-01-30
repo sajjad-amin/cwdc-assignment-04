@@ -62,6 +62,8 @@ addClickEvent("booking", function() {
     document.getElementById("confirmation-amount").innerHTML = document.getElementById("calculation").innerHTML;
     if(parseInt(firstClass.value) || parseInt(economyClass.value) > 0){
         modal.style.display = "block";
+    } else {
+        alert("Please choose at least one seat");
     }
 });
 
